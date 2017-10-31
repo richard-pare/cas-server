@@ -40,7 +40,8 @@ repositories {
 }
 
 dependencies {
-    compile "org.apereo.cas:cas-server-webapp-jetty:${project.'cas.version'}@war"
+    compile "org.apereo.cas:cas-server-webapp:${project.'cas.version'}@war"
+    compile "org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}"
 }
 
 task copyConfig(type: Copy) {
